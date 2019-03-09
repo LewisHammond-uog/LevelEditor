@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="LevelEditor.EditorMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LevelEditor"
+             mc:Ignorable="d" d:DesignWidth="800" Height="24">
+    <Menu DockPanel.Dock="Top">
+        <MenuItem Header="File">
+            <MenuItem Header="New" Click="HandleNew" />
+            <MenuItem Header="Save As..." Click="HandleSave" />
+            <MenuItem Header="Load Level" Click="HandleLoad" />
+            <MenuItem Header="Close" Click="HandleClose"/>
+        </MenuItem>
+        <MenuItem Header="Tiles">
+            <MenuItem Header="Import Tile" Click="HandleImportTile" />
+            <MenuItem Header="Import Tilesheet" Click="HandleImportTileSheet" />
+        </MenuItem>
+    </Menu>
+</UserControl>
